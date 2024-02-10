@@ -18,7 +18,7 @@ RUN set -eux; \
     rm -rf /var/lib/apt/lists/*
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 8080
 
 # Start Apache
 CMD ["apache2-foreground"]
