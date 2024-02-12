@@ -19,7 +19,7 @@ RUN curl -o joomla.zip -SL https://downloads.joomla.org/cms/joomla3/3-10-4/Jooml
         && chown -R www-data:www-data .
 
 # Copy Apache configuration
-COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
+#COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
 
 # Enable Apache rewrite module
 RUN a2enmod rewrite
